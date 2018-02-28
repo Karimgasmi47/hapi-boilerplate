@@ -2,6 +2,7 @@
 
 const handler = require('../handlers/default');
 
+
 exports.register = (server, options, next) => {
     server.route([
         {
@@ -12,6 +13,11 @@ exports.register = (server, options, next) => {
                 notes       : 'Route par défaut du projet',
                 tags        : ['api'],
                 handler     : handler.root,
+                /* plugins     : {
+                    'hapi-swagger' : {
+                        payloadType : 'form',
+                    },
+                },*/
             },
         },
     ]);

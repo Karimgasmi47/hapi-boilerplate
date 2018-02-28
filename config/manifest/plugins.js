@@ -11,6 +11,21 @@ module.exports.init = server => (
                     register : require('good'),
                 }, done);
             },
+            innert(done) {
+                server.register({
+                    register : require('inert'),
+                }, done);
+            },
+            vision(done) {
+                server.register({
+                    register : require('vision'),
+                }, done);
+            },
+            hapiswagger(done) {
+                server.register({
+                    register : require('hapi-swagger'),
+                }, done);
+            },
             blipp(done) {
                 server.register({
                     register : require('blipp'),
@@ -23,6 +38,11 @@ module.exports.init = server => (
             boom(done) {
                 server.register({
                     register : require('hapi-boom-decorators'),
+                }, done);
+            },
+            user(done) {
+                server.register({
+                    register : require('../../app/plugins/user'),
                 }, done);
             },
         }, (err) => {

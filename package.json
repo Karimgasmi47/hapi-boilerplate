@@ -24,8 +24,12 @@
     "hapi": "16.6.2",
     "hapi-boom-decorators": "3.0.1",
     "hapi-swagger": "7.9.1",
+    "inert": "4.2.1",
+    "joi": "13.1.2",
     "lodash": "4.17.4",
-    "npm-check-updates": "^2.13.0"
+    "mailgen": "^2.0.2",
+    "npm-check-updates": "^2.13.0",
+    "vision": "4.1.1"
   },
   "devDependencies": {
     "babel-eslint": "8.2.1",
